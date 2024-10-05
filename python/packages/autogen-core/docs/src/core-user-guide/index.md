@@ -34,7 +34,7 @@ Key features of AutoGen core include:
 
 ```{toctree}
 :caption: Getting Started
-:maxdepth: 1
+:maxdepth: 5
 :hidden:
 
 guides/quickstart

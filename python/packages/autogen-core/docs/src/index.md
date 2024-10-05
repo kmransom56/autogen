@@ -13,103 +13,106 @@ sd_hide_title: true
   font-weight: bold;
   margin: 2rem auto 0;
 }
+button.gs-button {
+  margin: 4px 0px 5px 0px;
+  padding: 6px 12px 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.version-text{
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: normal;
+}   
 </style>
 
 # AutoGen
 
 <div class="container">
-
+  
 <div class="row text-center">
 <div class="col-sm-12">
 <h1 class="hero-title">
-AutoGen
+AutoGen <span class="version-text">v0.4.0-dev released </span>
 </h1>
+
 <h3>
 A framework for developing applications using AI agents
 </h3>
 </div>
 </div>
 
+::::{grid} 2
+:::{grid-item-card} {fas}`people-group;pst-color-primary` AgentChat
+For Beginners
+^^^
+A High-level API include preset agents and teams for building multi-agent systems.
 
-<div class="row">
++++
 
-<div class="col-sm">
-<h2 class="text-center">
+<button onclick="location.href='agentchat-user-guide/quickstart.html'" class="gs-button col-sm">Get Started</button>
 
-{fas}`people-group;pst-color-primary` AgentChat
+:::
+:::{grid-item-card} {fas}`cube;pst-color-primary` Core
+For Advanced Users
+^^^
+Provides building blocks for creating asynchronous, event driven multi-agent systems.
 
-</h2>
++++
+<button onclick="location.href='core-user-guide/guides/quickstart.html'" class="gs-button col-sm">Get Started</button>
+:::
+::::
 
-<p>
-Task driven, high level APIs for building multi-agent systems. Including group chat, pre-built agents, and more.
+<br/>
+<br/>
 
-Built with <i>core</i>.
-<p>
+::::{grid} 2
 
-```sh
-pip install autogen-agentchat==0.4.0dev0
+:::{grid-item}
+
+## Gettting Started
+
+<br />
+AgentChat makes it easy to create apps where multiple agents interact to solve tasks.
+
+<br />
+<br />
+
+<button onclick="location.href='agentchat-user-guide/examples/index.html'" class="gs-button col-sm">View Examples &nbsp; {fas}`angle-right;pst-color-primary`</button>
+
+:::
+:::{grid-item}
+![AgentChat](./images/code.svg)
+:::
+
+::::
+
+```{versionadded} 0.4x
+The sample code below show a simple example of generating a stock price visualization in  using **AgentChat** (0.4) and 0.2 versions of AutoGen.
 ```
 
-<button onclick="location.href='agentchat-user-guide/guides/quickstart.html'" type="button" class="btn btn-primary">Get Started</button>
-<button onclick="location.href='reference/python/autogen_agentchat/autogen_agentchat.html'" type="button" class="btn btn-outline-secondary">API Reference</button>
+```{include} agentchat-user-guide/stocksnippet.md
 
-<div class="versionadded">
-<p>Start here if you are looking for an API similar to AutoGen 0.2</p>
-</div>
-
-</div>
-<div class="col-sm">
-<h2 class="text-center">
-
-{fas}`cube;pst-color-primary` Core
-
-</h2>
-
-<p>
-Primitive building blocks for creating asynchronous, event driven multi-agent systems.
-<p>
-
-```sh
-pip install autogen-core==0.4.0dev0
 ```
-
-<button onclick="location.href='core-user-guide/guides/quickstart.html'" type="button" class="btn btn-primary">Get Started</button>
-<button onclick="location.href='reference/python/autogen_core/autogen_core.html'" type="button" class="btn btn-outline-secondary">API Reference</button>
-
-</div>
-
-</div>
-</div>
-
-<!--
-Key features of AutoGen include:
-
-- Asynchronous messaging: Agents communicate with each other through asynchronous messages, enabling event-driven and request/response communication models.
-- Scalable & Distributed: Enable complex scenarios with networks of agents across org boundaries
-- Modular, extensible & highly customizable: E.g. custom agents, memory as a service, tools registry, model library
-- x-lang support: Python & Dotnet interoperating agents today, others coming soon
-- Observable, traceable & debuggable -->
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 3
 :hidden:
 
 agentchat-user-guide/index
+```
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+
 core-user-guide/index
 ```
 
-<!-- ## Community
-
-Information about the community that leads, supports, and develops AutoGen.
-
 ```{toctree}
-:maxdepth: 2
-
-community/index
-``` -->
-
-```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 :hidden:
 packages/index
 ```
@@ -119,4 +122,3 @@ packages/index
 :hidden:
 reference/index
 ```
-

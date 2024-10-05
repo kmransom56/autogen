@@ -23,6 +23,7 @@ myst:
 ```{toctree}
 :hidden:
 :caption: AutoGen AgentChat
+:maxdepth: 1
 
 python/autogen_agentchat/autogen_agentchat
 ```
@@ -30,6 +31,7 @@ python/autogen_agentchat/autogen_agentchat
 ```{toctree}
 :hidden:
 :caption: AutoGen Core
+:maxdepth: 2
 
 python/autogen_core/autogen_core
 ```
@@ -37,6 +39,7 @@ python/autogen_core/autogen_core
 ```{toctree}
 :hidden:
 :caption: AutoGen Extensions
+:maxdepth: 2
 
 python/autogen_ext/autogen_ext
 python/autogen_ext/autogen_ext.tools
@@ -65,4 +68,3 @@ python/autogen_ext/autogen_ext.tools
 :::
 
 ::::
-
