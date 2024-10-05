@@ -105,7 +105,7 @@ agentchat-user-guide/index
 ```
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
 :hidden:
 
 core-user-guide/index
