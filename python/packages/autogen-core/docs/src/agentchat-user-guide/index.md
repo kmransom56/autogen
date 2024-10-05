@@ -32,7 +32,6 @@ Teams define how groups of agents communicate to address tasks. The following Te
 :hidden:
 
 quickstart
-quickstart
 guides/tool_use
 
 ```
