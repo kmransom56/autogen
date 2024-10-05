@@ -67,6 +67,7 @@ dev-dependencies = [
     "sphinx-design",
     "pydata-sphinx-theme",
     "sphinx-copybutton",
+    "sphinxawesome-theme>=5.2.0",
 ]
 
 
