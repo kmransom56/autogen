@@ -7,7 +7,7 @@ myst:
 
 # Quick Start
 
-AgentChat API, introduced in AutoGen 0.4x, offers a similar level of abstraction as the default Agent classes in AutoGen 0.2x. This guide demonstrates how to migrate basic examples from AutoGen 0.2x to AgentChat in AutoGen 0.4x.
+AgentChat API, introduced in AutoGen 0.4x, offers a similar level of abstraction as the default Agent classes in AutoGen 0.2x.
 
 ## Installation
 
