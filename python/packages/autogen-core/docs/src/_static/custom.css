@@ -15,38 +15,81 @@
 .cell_output.docutils.container {
   padding-left: 0 !important;
 }
-
 .announcementbar {
-  background-color: #8ec4ff !important ;
-  color: #212529 !important;
-  text-align: center !important;
-  padding: 0.9rem 1.5rem 0.9rem 1.5rem !important;
-  font-size: 15px !important;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
 }
+
+.announcementbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.announcementbar-message {
+  flex-grow: 1;
+  text-align: center;
+}
+
 .announcementbar a {
-  /* color: #212529 !important; */
-  text-decoration: underline !important;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-/* .scroll::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  opacity: 0; /* Make scrollbar fully transparent by default */
-  transition: opacity 0.25s ease; /* Transition for the opacity */
+.announcement-close-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 4px 7px 4px 7px;
+  margin-left: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.scroll:hover::-webkit-scrollbar {
-  opacity: 1; /* Make scrollbar fully opaque on hover */
+.announcement-close-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.scroll::-webkit-scrollbar-track {
-  @apply bg-secondary;
-  border-radius: 20px;
+.announcement-close-button:active {
+  transform: scale(0.95);
 }
 
-.scroll::-webkit-scrollbar-thumb {
-  @apply bg-accent;
-  border-radius: 20px;
-  border: 3px solid rgb(214, 214, 214);
-} */
+.announcement-close-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .announcementbar {
+    font-size: 14px;
+  }
+
+  .announcementbar-content {
+    flex-direction: column;
+  }
+
+  .announcement-close-button {
+    margin-top: 5px;
+  }
+}

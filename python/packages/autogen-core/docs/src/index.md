@@ -9,9 +9,9 @@ sd_hide_title: true
 
 <style>
 .hero-title {
-  font-size: 60px;
+  font-size: 45px !important;
   font-weight: bold;
-  margin: 2rem auto 0;
+  margin: 2rem auto 0 !important;
 }
 button.gs-button {
   margin: 4px 0px 5px 0px;
@@ -26,18 +26,25 @@ button.gs-button {
   color: #6c757d;
   font-weight: normal;
 }   
+.logo {
+  width: 50px;
+  height: 50px; 
+  margin-bottom: 30px;
+  display: inline-block;
+}
 </style>
 
 # AutoGen
 
 <div class="container">
-  
+   
 <div class="row text-center">
 <div class="col-sm-12">
+<!-- <span class="version-text">v0.4.0-dev released </span> -->
 <h1 class="hero-title">
-AutoGen <span class="version-text">v0.4.0-dev released </span>
+<img src="_static/images/logo/logo.svg" alt="AutoGen" class="logo" />
+AutoGen 
 </h1>
-
 <h3>
 A framework for developing applications using AI agents
 </h3>

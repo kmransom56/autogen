@@ -80,6 +80,16 @@
         mode = 'light';
       }
       if (!userPreference) {localStorage.setItem('darkMode', mode)}
+     
+      function closeAnnouncement() {
+          var announcementBar = document.getElementById('announcementBar');
+          if (announcementBar) {
+              announcementBar.style.animation = 'fadeOut 0.5s ease forwards';
+              setTimeout(() => {
+                  announcementBar.remove();
+              }, 500);
+          }
+      }
     </script>
 
     {%- block extrahead %}{%- endblock extrahead %}
@@ -95,10 +105,16 @@
 
   {#- The main page wrapper -#}
   <div id="page" class="relative flex flex-col min-h-screen">
+    
     {% if theme_announcement %}
-        <div class="announcementbar bg-primary text-primary-foreground p-2 text-center">
-        {{ theme_announcement }}
-        </div>
+    <div id="announcementBar" class="announcementbar">
+      <div class="announcementbar-content">
+        <div class="announcementbar-message">{{ theme_announcement }}</div>
+        <button class="announcement-close-button" onclick="closeAnnouncement()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
     {% endif %}
     {#- Skip to content link -#}
     <a href="#content" class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100">

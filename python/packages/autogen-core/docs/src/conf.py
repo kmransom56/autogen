@@ -55,17 +55,14 @@ myst_enable_extensions = [
 # -- Options for HTML output -------------------------------------------------
 html_title = "AutoGen"
 html_theme = "sphinxawesome_theme"
-html_static_path = ["_static"]
+html_static_path = ["_static", "images"]
 html_css_files = [
     "custom.css", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"]
 html_js_files = [""]
 
 
-#  "display_github": True, # Integrate GitHub
-#     "github_user": "MyUserName", # Username
-#     "github_repo": "MyDoc", # Repo name
-#     "github_version": "master", # Version
-#     "conf_py_path": "/source/", # Path in the checkout to the docs root
+html_logo = "_static/images/logo/logo.svg"
+html_favicon = "_static/images/logo/favicon-512x512.png"
 
 html_baseurl = "/autogen/dev/"
 announcement = '<span class="fa-solid fa-triangle-exclamation"></span> AutoGen v0.4 is a work in progress. Go <a href="/autogen/0.2/">here</a> to continue using v0.2 documentation.'
@@ -92,8 +89,9 @@ theme_options = ThemeOptions(
     show_prev_next=False,
     awesome_external_links=True,
     main_nav_links={
-        "AgentChat": "/agentchat-user-guide/index",
-        "Core": "/core-user-guide/index",
+        # "AgentChat": "/agentchat-user-guide/index",
+        # "Core": "/core-user-guide/index",
+        "Docs": "/index",
         "Packages": "/packages/index",
         "API Reference": "/reference/index",
     },
@@ -126,15 +124,43 @@ theme_options = ThemeOptions(
                 '</svg>'
             ),
         },
-        # "PyPI": {
-        #     "link": "/packages",
-        #     "icon": (
-        #         '<svg height="26px" style="margin-top:-2px;display:inline" '
-        #         'viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">'
-        #         '<path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.6 20.8v-3.2H6.8v-1.6h3.6v-3.2H6.8V11h3.6V6.8h-6v14h6zm9.6-9.6h-3.6v3.2h3.6v1.6h-3.6v3.2h-1.6v-14h5.2v6z"/>'
-        #         '</svg>'
-        #     ),
-        # },
+        "PyPI": {
+            "link": "/packages",
+            "icon": (
+                '<svg width="22" height="20" viewBox="0 0 118 105" fill="none" xmlns="http://www.w3.org/2000/svg">'
+                '<path d="M17.6645 40.4581L34.2565 46.4975L51.0948 40.3685L34.5029 34.329L17.6645 40.4581ZM34.329 26.8229L50.922 32.8623L67.7593 26.7333L51.1674 20.6938L34.329 26.8229Z" fill="#F7F7F4" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M34.329 26.8229L50.922 32.8624V52.3631L34.329 46.3247V26.8229Z" fill="#EFEEEA" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M1 66.2116L17.592 72.2521L34.4303 66.1231L17.8373 60.0836L1 66.2116Z" fill="#F7F7F4" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M1 66.2117L17.592 72.2522V91.753L1 85.7146V66.2117Z" fill="#EFEEEA" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M1 38.4783L17.592 44.5189L34.4303 38.3898L17.8373 32.3503L1 38.4783Z" fill="#F7F7F4" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M17.5919 44.5189V64.0196L34.4303 57.8916V38.3898L17.5919 44.5189Z" fill="white" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M1 38.4783L17.592 44.5189V64.0196L1 57.9812V38.4783Z" fill="#EFEEEA" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M17.6634 72.2725L34.2564 78.3119V97.8137L17.6645 91.7743L17.6634 72.2725Z" fill="#EFEEEA" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M17.6634 52.5775L34.2564 58.617L51.0948 52.4879L34.5028 46.4495L17.6634 52.5775Z" fill="#F7F7F4" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M17.6634 52.5775L34.2564 58.617V78.1188L17.6645 72.0794L17.6634 52.5775Z" fill="#EFEEEA" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M100.917 66.1913V85.6932L117.754 79.5652V60.0634L100.917 66.1913Z" fill="white" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M84.251 72.2521V91.7529L101.089 85.6249V66.123L84.251 72.2521Z" fill="#FFD242" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M98.0377 77.0062C98.0378 77.4582 97.9542 77.9362 97.7917 78.413C97.6292 78.8897 97.391 79.3559 97.0907 79.7848C96.7904 80.2137 96.4338 80.5969 96.0414 80.9127C95.6489 81.2284 95.2283 81.4704 94.8036 81.6249C93.9463 81.9367 93.1241 81.8734 92.5178 81.4489C91.9116 81.0245 91.5708 80.2736 91.5705 79.3614C91.5703 78.9095 91.6539 78.4316 91.8163 77.9549C91.9787 77.4782 92.2168 77.0121 92.517 76.5832C92.8172 76.1543 93.1737 75.771 93.566 75.4552C93.9583 75.1394 94.3789 74.8973 94.8036 74.7428C95.2283 74.5882 95.6488 74.5241 96.0412 74.5542C96.4336 74.5844 96.7901 74.7081 97.0904 74.9184C97.3908 75.1287 97.629 75.4214 97.7915 75.7798C97.9541 76.1382 98.0377 76.5543 98.0377 77.0062Z" fill="white"/>'
+                '<path d="M67.5865 78.3119V97.8137L84.4249 91.6847V72.1829L67.5865 78.3119Z" fill="#FFD242" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M50.922 84.3717V103.873L67.7593 97.7444V78.2437L50.922 84.3717Z" fill="white" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M34.329 78.3322L50.922 84.3716V103.873L34.329 97.834V78.3322Z" fill="#EFEEEA" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M100.917 46.4975V65.9983L117.754 59.8703V40.3685L100.917 46.4975Z" fill="#FFD242" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M84.3235 20.7632L100.917 26.8026L117.754 20.6736L101.162 14.6341L84.3235 20.7632Z" fill="#FFC91D" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M100.917 26.8026V46.3034L117.754 40.1754V20.6736L100.917 26.8026ZM84.251 52.5572V72.058L101.089 65.93V46.4282L84.251 52.5572Z" fill="#FFD242" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M84.251 32.8624V52.3631L101.089 46.2351V26.7333L84.251 32.8624Z" fill="#3775A9" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M67.6591 7.12799L84.251 13.1674L101.089 7.03839L84.4974 1L67.6591 7.12799Z" fill="#2F6491" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M84.251 13.1664V32.6682L101.089 26.5402V7.03839L84.251 13.1664Z" fill="#3775A9" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M67.5865 58.617V78.1188L84.4249 71.9898V52.4879L67.5865 58.617Z" fill="#FFD242" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M67.5865 38.9221V58.4239L84.4249 52.2948V32.793L67.5865 38.9221ZM50.922 64.6767V84.1785L67.7593 78.0495V58.5487L50.922 64.6767Z" fill="#3775A9" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M34.329 58.6383L50.922 64.6767V84.1786L34.329 78.1391V58.6383ZM34.329 38.9424L50.922 44.9818L67.7593 38.8538L51.1674 32.8144L34.329 38.9424Z" fill="#2F6491" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M50.922 44.9818V64.4836L67.7593 58.3546V38.8538L50.922 44.9818Z" fill="#3775A9" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M34.329 38.9423L50.922 44.9818V64.4836L34.329 58.4442V38.9423ZM50.9946 13.1877L67.5865 19.2272L84.4249 13.0981L67.8319 7.05972L50.9946 13.1877Z" fill="#2F6491" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M67.5865 19.2272V38.729L84.4249 32.5999V13.0981L67.5865 19.2272Z" fill="#3775A9" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M50.9946 13.1877L67.5865 19.2272V38.729L50.9946 32.6895V13.1877Z" fill="#2F6491" stroke="#CCCCCC" stroke-width="0.378666" stroke-linejoin="bevel"/>'
+                '<path d="M77.1065 25.4906C77.1066 25.9426 77.023 26.4206 76.8605 26.8974C76.6981 27.3741 76.4598 27.8403 76.1595 28.2692C75.8592 28.6981 75.5026 29.0813 75.1102 29.3971C74.7177 29.7128 74.2971 29.9548 73.8724 30.1093C73.4477 30.2639 73.0271 30.3279 72.6347 30.2978C72.2424 30.2677 71.8858 30.1439 71.5855 29.9336C71.2852 29.7233 71.0469 29.4306 70.8844 29.0722C70.7219 28.7138 70.6382 28.2967 70.6382 27.8448C70.6381 27.3928 70.7217 26.9148 70.8842 26.438C71.0467 25.9613 71.2849 25.4951 71.5853 25.0662C71.8856 24.6373 72.2422 24.254 72.6346 23.9383C73.027 23.6226 73.4476 23.3806 73.8724 23.2261C74.2971 23.0715 74.7176 23.0074 75.11 23.0376C75.5024 23.0677 75.8589 23.1915 76.1593 23.4018C76.4596 23.612 76.6978 23.9047 76.8603 24.2632C77.0229 24.6216 77.1065 25.0387 77.1065 25.4906Z" fill="white"/>'
+                '</svg>'
+            ),
+        },
     },
 
 )
