@@ -14,7 +14,7 @@ A list of examples to help you get started with AgentChat.
 ::::{grid-item-card} Travel Planning
 :img-top: ../../images/code.svg
 :img-alt: travel planning example
-:link: ./travel-planning
+:link: ./travel-planning.html
 
 ^^^
 Generating a travel plan using multiple agents.
@@ -25,10 +25,10 @@ Generating a travel plan using multiple agents.
 ::::{grid-item-card} Company Research
 :img-top: ../../images/code.svg
 :img-alt: company research example
-:link: ./company-research
+:link: ./company-research.html
 
 ^^^
-Generating a company research report using multiple agents.
+Generating a company research report using multiple agents with tools.
 +++
 
 ::::
@@ -36,10 +36,10 @@ Generating a company research report using multiple agents.
 ::::{grid-item-card} Literature Review
 :img-top: ../../images/code.svg
 :img-alt: literature review example
-:link: ./literature-review
+:link: ./literature-review.html
 
 ^^^
-Generating a literature review using multiple agents.
+Generating a literature review using agents with tools.
 +++
 
 ::::
