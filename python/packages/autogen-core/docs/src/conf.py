@@ -92,8 +92,8 @@ theme_options = ThemeOptions(
         # "AgentChat": "/agentchat-user-guide/index",
         # "Core": "/core-user-guide/index",
         "Docs": "/index",
-        "Packages": "/packages/index",
-        "API Reference": "/reference/index",
+        # "Packages": "/packages/index",
+        # "API Reference": "/reference/index",
     },
     extra_header_link_icons={
         "Twitter": {
