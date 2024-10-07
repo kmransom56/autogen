@@ -144,18 +144,7 @@
         {%- block main %}
         <main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
           {%- block body %}{%- endblock %}
-          {% if display_github %}
-            <a class="text-sm leading-loose text-muted-foreground" href="https://github.com/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}/{{ conf_py_path }}
-            {%- if page_source_suffix == '.ipynb' -%}
-                {{ pagename }}.ipynb
-            {%- elif page_source_suffix == '.md' -%}
-                {{ pagename }}.md
-            {%- else -%}
-                {{ pagename }}.rst
-            {%- endif -%}">
-                <span class="fa-brands fa-github"></span> Show on GitHub
-            </a>
-        {% endif %}
+          
         </main>
         {%- endblock main %}
       </div>
