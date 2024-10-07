@@ -57,7 +57,7 @@ A framework for developing applications using AI agents
 
 For Beginners
 ^^^
-A High-level API include preset agents and teams for building multi-agent systems.
+A High-level API that includes preset agents and teams for building multi-agent systems.
 
 +++
 
@@ -129,7 +129,7 @@ packages/index
 ```
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 3
 :hidden:
 reference/index
 ```

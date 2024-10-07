@@ -7,7 +7,7 @@
           {%- if show_copyright and copyright|length -%}
             {%- if hasdoc('copyright') -%}
               {%- trans path=pathto('copyright'), copyright=copyright|e -%}
-              © <a href="{{ path }}">Copyright</a>{{ copyright }}
+              © <a href="{{ path }}">Copyright</a>{{ copyright }} 
             {%- endtrans -%}
           {%- else -%}
             {%- trans copyright=copyright|e -%}
@@ -22,7 +22,7 @@
     {%- endif -%}
     {%- if show_sphinx -%}
       {%- trans sphinx_version=sphinx_version|e -%}
-      Built with <a class="font-medium underline underline-offset-4"
+      . Built with <a class="font-medium underline underline-offset-4"
     href="https://www.sphinx-doc.org"
     rel="noreferrer">Sphinx {{ sphinx_version }}</a>
     {%- endtrans -%} 

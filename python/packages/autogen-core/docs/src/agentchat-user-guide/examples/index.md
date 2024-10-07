@@ -18,7 +18,6 @@ A list of examples to help you get started with AgentChat.
 
 ^^^
 Generating a travel plan using multiple agents.
-+++
 
 ::::
 
@@ -29,7 +28,6 @@ Generating a travel plan using multiple agents.
 
 ^^^
 Generating a company research report using multiple agents with tools.
-+++
 
 ::::
 
@@ -40,7 +38,6 @@ Generating a company research report using multiple agents with tools.
 
 ^^^
 Generating a literature review using agents with tools.
-+++
 
 ::::
 

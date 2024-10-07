@@ -16,7 +16,7 @@
   padding-left: 0 !important;
 }
 .announcementbar {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   left: 0;
   right: 0;
