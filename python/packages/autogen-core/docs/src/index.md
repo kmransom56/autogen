@@ -53,6 +53,8 @@ A framework for developing applications using AI agents
 
 ::::{grid} 2
 :::{grid-item-card} {fas}`people-group;pst-color-primary` AgentChat
+:link: agentchat-user-guide/quickstart.html
+
 For Beginners
 ^^^
 A High-level API include preset agents and teams for building multi-agent systems.
@@ -63,6 +65,8 @@ A High-level API include preset agents and teams for building multi-agent system
 
 :::
 :::{grid-item-card} {fas}`cube;pst-color-primary` Core
+:link: core-user-guide/guides/quickstart.html
+
 For Advanced Users
 ^^^
 Provides building blocks for creating asynchronous, event driven multi-agent systems.
