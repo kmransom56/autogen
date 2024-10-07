@@ -76,7 +76,8 @@ html_context = {
     'theme_announcement': announcement,
 }
 
-pygments_style = "sphinx"
+pygments_style = "xcode"
+pygments_style_dark = "monokai"
 
 html_permalinks_icon = Icons.permalinks_icon
 

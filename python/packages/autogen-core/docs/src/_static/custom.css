@@ -3,7 +3,9 @@
 }
 
 .cell_input.docutils.container,
-.output.stream {
+.output.stream,
+.cell_output .output.text_plain,
+.cell_output .output.stream {
   background-color: inherit !important;
   border-radius: 4px !important;
 }
