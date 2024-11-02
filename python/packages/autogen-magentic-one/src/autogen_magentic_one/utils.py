@@ -7,12 +7,8 @@ from typing import Any, Dict, List, Literal
 
 from autogen_core.application.logging.events import LLMCallEvent
 from autogen_core.components import Image
-from autogen_core.components.models import (
-    AzureOpenAIChatCompletionClient,
-    ChatCompletionClient,
-    ModelCapabilities,
-    OpenAIChatCompletionClient,
-)
+from autogen_ext.models import AzureOpenAIChatCompletionClient, OpenAIChatCompletionClient
+from autogen_core.components.models import ChatCompletionClient, ModelCapabilities
 
 from .messages import (
     AgentEvent,

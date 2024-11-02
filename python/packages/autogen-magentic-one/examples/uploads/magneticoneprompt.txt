@@ -1,0 +1,11 @@
+I am interested in creating an application that can take network requirements documents from vendors seeking to integrate devices, networks, firewall policies, allowed list, vlans, tcp and udp ports and services into our fortigate firewall. I want to create a spreadsheet as well as the foritgate configuration. I have an example document, texcel spreadsheet how the output should be formatted , a fortigate configuration file and some python code.The excel spreadsheet displays how the output should be formatted to be used to create a fortigate firewall configuration I want toleverage AutoGen's capabilities, particularly the teachable agents that can learn and recall specific tasks and processes.
+The files are located in the directory /home/keransom/autogen/python/packages/autogen-magentic-one/examples/uploads/BR_SONIC-07997.conf,  /home/keransom/autogen/python/packages/autogen-magentic-one/examples/uploads/network_config_parserv1.py,  /home/keransom/autogen/python/packages/autogen-magentic-one/examples/uploads/Network_Requirements_Form.xlsx, /home/keransom/autogen/python/packages/autogen-magentic-one/examples/uploads/Solink Network Requirements.pdf. I have an html file that can be used for a flask application l/home/keransom/autogen/python/packages/autogen-magentic-one/examples/uploads/upload.html
+Save the outputs such as any scripts, spreadsheet or other files  in the directory /home/keransom/autogen/python/packages/autogen-magentic-one/examples/uploads. Don't create any placeholders in the python code as that will make it difficult to ensure the code is working if their is logic missing.
+
+python3-m venv auditfortigateconfig
+source auditfortigateconfig/bin/activate
+
+chmod +r /home/keransom/auditfortigateconfig/IBR_SONIC-01151_7-0_0601_202410110853.conf
+chmod +r /home/keransom/auditfortigateconfig/IBR_SONIC-02587_7-0_0601_202410101238.conf
+
+curl -X POST "http://127.0.0.1:8000/compare" -F "file1=@/home/keransom/auditfortigateconfig/IBR_SONIC-01151_7-0_0601_202410110853.conf" -F "file2=@/home/keransom/auditfortigateconfig/IBR_SONIC-02587_7-0_0601_202410101238.conf"
